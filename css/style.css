@@ -102,6 +102,11 @@ h1 {
 
 .header__logo a {
   color: #5c5c5c;
+  transition: color .3s ease-in-out;
+}
+
+.header__logo a:hover {
+  color: #ffffff;
 }
 
 .header__content {
@@ -142,6 +147,7 @@ h1 {
 
 .header__content--text p {
   color: #919090;
+  margin-top: 1rem;
 }
 
 .header__content--img img {
@@ -150,10 +156,180 @@ h1 {
   padding: 1rem;
 }
 
-.nav__logo {
-  color: #5c5c5c;
-  font-size: 3rem;
+.header__content--article {
+  margin-right: 5rem;
+  width: 40%;
+}
+
+.navigation__checkbox {
+  display: none;
+  transition: all .4s;
+}
+
+.navigation__button {
+  background-color: #FD2155;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 7rem;
+  right: 7rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(92, 92, 92, 0.1);
+  text-align: center;
+}
+
+.navigation__button:hover {
+  cursor: pointer;
+}
+
+.navigation__background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 7.5rem;
+  right: 7.5rem;
+  background-image: radial-gradient(#222222, #151515);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(1, -0.57, 0.04, 1.77);
+}
+
+.navigation__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
   font-family: 'Dancing Script', cursive;
-  line-height: 1;
+  line-height: 0;
+  width: 50%;
+  height: 100%;
+  align-self: center;
+  background-color: #151515;
+}
+
+.navigation__logo a {
+  color: #919090;
+  transition: color .3s ease-in-out;
+}
+
+.navigation__logo a:hover {
+  color: #ffffff;
+  animation: pulsate 1s infinite;
+}
+
+.navigation__list {
+  width: 50%;
+  list-style: none;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FD2155 50%);
+  background-size: 238%;
+  transition: all .4s;
+}
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #ffffff;
+  transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 1px;
+  background-color: #ffffff;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.navigation__icon::before, .navigation__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.navigation__icon::before {
+  top: -.8rem;
+}
+
+.navigation__icon::after {
+  top: .8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -.9rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: .9rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.about {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  padding: 4rem;
+  background-color: #222222;
+  height: 88.7vh;
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  padding: 4rem;
+  background-color: #222222;
+  height: 88.7vh;
 }
 /*# sourceMappingURL=style.css.map */

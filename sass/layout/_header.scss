@@ -1,8 +1,4 @@
 .header {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-
     display: grid;
     grid-template-rows: min-content 1fr;
     padding: 4rem;
@@ -17,6 +13,11 @@
         
         a {
             color: $color-tertiary;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $color-primary;
+            }
         }
     }
 
@@ -73,6 +74,7 @@
 
             p {
                 color: $color-secondary;
+                margin-top: 1rem;
             }
         }
 
@@ -82,6 +84,11 @@
                 border-radius: 50%;
                 padding: 1rem;
             }
+        }
+
+        &--article {
+            margin-right: 5rem;
+            width: 40%;
         }
     }
 }

@@ -8,18 +8,35 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
 
-    <title>Damilola Akinlade</title>
+    <title>Damilola Akinlade | Front-end Developer</title>
 
     <!-- navigation -->
-        <nav class="nav">
-            <!-- <div class="nav__logo">
-                damiCodes
-            </div> -->
+    <div class="navigation">
+        <input type="checkbox" name="checkbox" id="navigation-toggle" class="navigation__checkbox">
+        <label for="navigation-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        
+        <nav class="navigation__nav">
+            <div class="navigation__logo">
+                <a href="index.html">
+                    damiCodes
+                </a>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="skills.html" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
         </nav>
+    </div>
     <!-- end of navigation -->
 
     <!-- header -->
@@ -52,7 +69,7 @@
                         A web developer.
                     </h1>
                     <p>Front-end developer based in Lagos, Nigeria </p>
-                    <a class="btn">
+                    <a class="btn" href="about.html">
                         See more about me!
                         <span>&rarr;</span>
                     </a>

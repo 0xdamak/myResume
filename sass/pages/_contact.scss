@@ -1,0 +1,7 @@
+.contact {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    padding: 4rem;
+    background-color: $bg-color-light;
+    height: 88.7vh;
+}
