@@ -10,12 +10,14 @@
     height: 88.7vh;
 
     &__logo {
-        color: $color-tertiary;
         font-size: 3rem;
         font-family: 'Dancing Script', cursive;
         // font-family: 'Allura', cursive;
-        line-height: 1;
+        line-height: 0;
         
+        a {
+            color: $color-tertiary;
+        }
     }
 
     &__content {
@@ -34,11 +36,11 @@
                 display: inline-block;
 
                 span:nth-child(1) {
-                    color: #05FDD8;
+                    color: $green;
                     margin-right: -7.9rem;
                 }
                 span:nth-child(2) {
-                    color: #FD2155;
+                    color: $pink;
                     margin-right: -2rem;
                 }
 
@@ -63,6 +65,12 @@
                 &:hover span:nth-child(3) {
                     color: $color-tertiary;
                     transition: all .3s cubic-bezier(0.63, -0.12, 0.74, 0.05);
+                }
+            }
+
+            .btn {
+                span {
+                    margin-left: ;
                 }
             }
         }

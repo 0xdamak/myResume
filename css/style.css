@@ -41,9 +41,13 @@ h1 {
 }
 
 .btn {
-  border: 1px solid;
+  border: 1px solid #FD2155;
   outline: none;
   background-color: transparent;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -59,10 +63,13 @@ h1 {
 }
 
 .header__logo {
-  color: #5c5c5c;
   font-size: 3rem;
   font-family: 'Dancing Script', cursive;
-  line-height: 1;
+  line-height: 0;
+}
+
+.header__logo a {
+  color: #5c5c5c;
 }
 
 .header__content {
