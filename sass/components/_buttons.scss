@@ -1,0 +1,9 @@
+.btn {
+    border: 1px solid $colo;
+    outline: none;
+    background-color: transparent;
+
+    &:hover {
+        outline: none;
+    }
+}

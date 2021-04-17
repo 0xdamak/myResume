@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+    background-color: $bg-color-dark;
+    padding: 4rem;
+    // color: ;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #FD2155;
+    color: #fff;
+}

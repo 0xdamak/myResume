@@ -1,0 +1,9 @@
+.nav {
+    &__logo {
+        color: $color-tertiary;
+        font-size: 3rem;
+        font-family: 'Dancing Script', cursive;
+        // font-family: 'Allura', cursive;
+        line-height: 1;
+    }
+}
