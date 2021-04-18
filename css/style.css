@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -91,7 +92,7 @@ h1 {
   grid-template-rows: min-content 1fr;
   padding: 4rem;
   background-color: #222222;
-  height: 88.7vh;
+  height: calc(100vh - 8rem);
 }
 
 .header__logo {
@@ -157,8 +158,37 @@ h1 {
 }
 
 .header__content--article {
+  position: relative;
   margin-right: 5rem;
   width: 40%;
+  z-index: 5;
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.header__content--article p:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.header__content--article p:nth-child(2) ~ ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.header__content--article p:nth-child(2) ~ ul li {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.header__content--article p:nth-child(2) ~ ul li::before {
+  content: "▹";
+  position: absolute;
+  left: -8%;
+  top: 30%;
+  color: #FD2155;
+  font-size: 2.3rem;
+  line-height: 12px;
 }
 
 .navigation__checkbox {

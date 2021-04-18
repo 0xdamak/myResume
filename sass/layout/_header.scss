@@ -3,7 +3,7 @@
     grid-template-rows: min-content 1fr;
     padding: 4rem;
     background-color: $bg-color-light;
-    height: 88.7vh;
+    height: calc(100vh - 8rem);
 
     &__logo {
         font-size: 3rem;
@@ -87,8 +87,45 @@
         }
 
         &--article {
+            position: relative;
             margin-right: 5rem;
             width: 40%;
+            // border-left: 1rem solid $color-secondary;
+            z-index: 5;
+            font-size: 1.7rem;
+            line-height: 1.8;
+
+            & p:nth-child(1) {
+                
+            }
+
+            & p:nth-child(2) {
+                margin-top: 2rem;
+                // padding-bottom: 3rem;
+                // border-bottom: 1rem solid $color-secondary;
+
+                ~ ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    list-style: none;
+
+                    li {
+                        // list-style: none;
+                        position: relative;
+                        margin-left: 1.5rem;
+
+                        &::before {
+                            content: "▹";
+                            position: absolute;
+                            left: -8%;
+                            top: 30%;
+                            color: $pink;
+                            font-size: 2.3rem;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
