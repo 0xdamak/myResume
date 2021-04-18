@@ -90,19 +90,13 @@
             position: relative;
             margin-right: 5rem;
             width: 40%;
-            // border-left: 1rem solid $color-secondary;
+            padding-left: 3rem;
+            border-left: 1rem solid $color-secondary;
             z-index: 5;
             font-size: 1.7rem;
             line-height: 1.8;
 
-            & p:nth-child(1) {
-                
-            }
-
             & p:nth-child(2) {
-                margin-top: 2rem;
-                // padding-bottom: 3rem;
-                // border-bottom: 1rem solid $color-secondary;
 
                 ~ ul {
                     display: grid;
@@ -110,7 +104,6 @@
                     list-style: none;
 
                     li {
-                        // list-style: none;
                         position: relative;
                         margin-left: 1.5rem;
 
@@ -126,6 +119,16 @@
                     }
                 }
             }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 6rem;
+            margin-top: 4rem;
         }
     }
 }
