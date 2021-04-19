@@ -2,7 +2,7 @@
     border: 1px solid $color-tertiary;
     outline: none;
     color: $color-primary;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     margin-top: 2rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -15,6 +15,10 @@
     background-size: 228%;
     transition: all .4s;
     background-position: 179%;
+
+    @include respond(972px) {
+        font-size: 1rem;
+    }
 
     &:hover,
     &:active {

@@ -8,13 +8,20 @@
 
 html {
     font-size: 62.5%;
+
+    @include respond(972px) {
+        font-size: 50%;
+    }
+
+    @include respond(774px) {
+        font-size: 45%;
+    }
 }
 
 body {
     line-height: 1.6;
     background-color: $bg-color-dark;
     padding: 4rem;
-    // color: ;
 }
 
 a,
