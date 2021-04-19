@@ -352,7 +352,7 @@ h1 {
   padding-left: 3rem;
   border-left: 1rem solid #919090;
   z-index: 5;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.8;
 }
 
@@ -516,7 +516,7 @@ h1 {
 }
 
 .navigation__logo ul li:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .navigation__logo ul li:hover {
