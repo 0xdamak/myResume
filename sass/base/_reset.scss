@@ -16,6 +16,10 @@ html {
     @include respond(774px) {
         font-size: 45%;
     }
+
+    @include respond(472px) {
+        font-size: 40%;
+    }
 }
 
 body {
