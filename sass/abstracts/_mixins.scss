@@ -15,7 +15,22 @@
         @media only screen and (max-width: 64em) {
             @content
         }
-    } 
+    }
+    @if $breakpoint == 972px {
+        @media only screen and (max-width: 60.75em) {
+            @content
+        }
+    }
+    @if $breakpoint == 960px {
+        @media only screen and (max-width: 60em) {
+            @content
+        }
+    }
+    @if $breakpoint == 940px {
+        @media only screen and (max-width: 58.75em) {
+            @content
+        }
+    }
     @if $breakpoint == 768px {
         @media only screen and (max-width: 48em) {
             @content
@@ -28,6 +43,11 @@
     }
     @if $breakpoint == 480px {
         @media only screen and (max-width: 30em) {
+            @content
+        }
+    }
+    @if $breakpoint == 472px {
+        @media only screen and (max-width: 29.5em) {
             @content
         }
     }
