@@ -16,6 +16,16 @@
         box-shadow: 0 1rem 3rem rgba($color-tertiary, $alpha: .1);
         text-align: center;
 
+        @include respond(430px) {
+            top: 5rem;
+            right: 5rem;
+        }
+
+        @include respond(360px) {
+            top: 3rem;
+            right: 3rem;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -32,6 +42,16 @@
         background-image: radial-gradient($bg-color-light, $bg-color-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond(430px) {
+            top: 5rem;
+            right: 5rem;
+        }
+
+        @include respond(360px) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__nav {

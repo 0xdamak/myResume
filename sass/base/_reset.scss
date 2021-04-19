@@ -20,12 +20,24 @@ html {
     @include respond(472px) {
         font-size: 40%;
     }
+
+    @include respond(375px) {
+        font-size: 36%;
+    }
 }
 
 body {
     line-height: 1.6;
     background-color: $bg-color-dark;
     padding: 4rem;
+
+    @include respond(430px) {
+        padding: 2rem;
+    }
+
+    @include respond(360px) {
+        padding: 0;
+    }
 }
 
 a,
